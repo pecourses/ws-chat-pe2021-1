@@ -20,12 +20,14 @@ function App () {
   return (
     <>
       <ul>
-        {mesaages.map(m => (
+        {messages.map(m => (
           <li>
             {m.author} {m.body} {m.ceratedAt}
           </li>
         ))}
       </ul>
+      {/* {error ?? <div>ERROR!!!</div>}
+      {isFetching ?? <div>Loading...</div>} */}
       <Formik
         initialValues={{ author: '', body: '' }}
         onSubmit={(values, formikBag) => {
