@@ -26,8 +26,8 @@ function App () {
           </li>
         ))}
       </ul>
-      {/* {error ?? <div>ERROR!!!</div>}
-      {isFetching ?? <div>Loading...</div>} */}
+      {error && <div>ERROR!!!</div>}
+      {isFetching && <div>Loading...</div>}
       <Formik
         initialValues={{ author: '', body: '' }}
         onSubmit={(values, formikBag) => {
