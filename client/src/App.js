@@ -19,13 +19,13 @@ function App () {
 
   return (
     <>
-      <ul>
+      <ol>
         {messages.map(m => (
           <li>
             {m.author} {m.body} {m.ceratedAt}
           </li>
         ))}
-      </ul>
+      </ol>
       {error && <div>ERROR!!!</div>}
       {isFetching && <div>Loading...</div>}
       <Formik
